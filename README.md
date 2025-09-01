@@ -203,7 +203,7 @@ uv run sqlmesh plan prod --auto-apply --no-prompts
 1. **Azure Service Principal** with:
    - `Item.ReadWrite.All` Fabric API scope
    - Contributor role on Fabric workspace
-   - `db_owner` on state database
+   - To be granted `db_owner` access on the state database, being a workspace admin alone is insufficient. Navigate to SQL Database > Security > Manage SQL Security. Select `db_owner` and then click "Manage Access."
 
 2. **Fabric Resources**:
    - Workspace with contributor access
