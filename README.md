@@ -79,6 +79,8 @@ export FABRIC__STATE_ENDPOINT="${FABRIC__SQL_ENDPOINT_ID}.database.fabric.micros
 export FABRIC__STATE_DATABASE="your_state_database"
 ```
 
+Note: For the State Database name, enter the actual name, which is your DBName (e.g., statedb) followed by a GUID (e.g., statedb-ede30a3d-044b-4771-a870-d7c434081347).
+
 ### Running SQLMesh Locally
 
 ```bash
@@ -121,6 +123,8 @@ uv run sqlmesh ui
    - `FABRIC--STATE-ENDPOINT`
    - `FABRIC--STATE-DATABASE`
    - `GIT-PAT` (Personal Access Token for Azure DevOps)
+  
+Note: For the State Database name, enter the actual name, which is your DBName (e.g., statedb) followed by a GUID (e.g., statedb-ede30a3d-044b-4771-a870-d7c434081347).
 
 4. **Update the notebook** with your configuration:
    - Azure Key Vault URL
